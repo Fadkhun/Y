@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Gambar Acak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-area">
+        <div id="info">
+            <div id="timer">Waktu: 60</div>
+            <div id="score"></div>
+        </div>
+        <div id="box"></div>
+        <div id="instruction" class="instruction-block">
+            Kumpulkan 50 kepala<br>
+            dalam waktu 1 menit<br>
+            <br>
+            Pastikan volume 100%<br>
+            untuk mendengar sesuatu
+        </div>
+    </div>
+
+    <audio id="backsound" src="backsound.mp3" loop></audio>
+    <audio id="jumpscare-sound" src="jumpscare.mp3"></audio>
+    <div id="jumpscare-image" class="hidden"></div>
+    <div id="win-message" class="hidden">Kamu Menang!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

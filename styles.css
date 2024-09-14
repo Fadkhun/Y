@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease;
+}
+
+#game-area {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 10px;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#score {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#score img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-image: url('gambar.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.instruction-block {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border: 2px solid #000;
+    color: #333;
+    z-index: 1;
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+#jumpscare-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('jumpscare.png');
+    background-size: cover;
+    z-index: 1000;
+}
+
+#win-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 3px solid green;
+    color: green;
+    z-index: 1001;
+}
